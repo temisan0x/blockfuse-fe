@@ -27,8 +27,7 @@ export default function BootcampCard({ title, description, imageUrl, note, href 
                         Join the Waitlist <span className="ml-2">→</span>
                     </Link>
 
-                    {/* Note */}
-                    <p className="text-sm text-cyan-400 mt-3 text-center">
+                    <p className="text-sm text-cyan-400 mt-8 text-center">
                         {note}
                     </p>
                 </div>
