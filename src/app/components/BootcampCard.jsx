@@ -1,10 +1,10 @@
-// components/BootcampCard.js
 import React from "react";
 import Link from "next/link";
 
 export default function BootcampCard({ title, description, imageUrl, note, href }) {
     return (
-        <div className="w-full mx-auto border border-purple-500 rounded-lg shadow-md overflow-hidden p-6">
+        <div className="w-full h-full border border-purple-500 rounded-lg shadow-md overflow-hidden flex flex-col">
+
             <div
                 className="w-full h-48 bg-cover bg-center bg-no-repeat relative"
                 style={{ backgroundImage: `url(${imageUrl})` }}
@@ -13,19 +13,25 @@ export default function BootcampCard({ title, description, imageUrl, note, href 
                     {title}
                 </h3>
             </div>
+            <div className="p-6 flex-1 flex flex-col ">
+                <p className="text-base text-gray-300 mb-6 leading-relaxed flex-1">
+                    {description}
+                </p>
 
-            <div className="text-white">
-                <p className="text-base text-gray-300 mb-6 leading-relaxed">{description}</p>
+                {/* Button and Note Section */}
+                <div className="mt-auto py-6">
+                    <Link
+                        href={href || "#"}
+                        className="block items-center bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-all duration-300 ease-in-out hover:shadow-lg mx-auto block w-full max-w-xs text-center"
+                    >
+                        Join the Waitlist <span className="ml-2">→</span>
+                    </Link>
 
-                <Link
-                    href={href || "#"}
-                    className="inline-flex items-center bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-all duration-300 ease-in-out hover:shadow-lg mx-auto block w-full max-w-xs text-center"
-                >
-                    Join the Waitlist <span className="ml-2">→</span>
-                </Link>
-
-                {/* Note */}
-                <p className="text-sm text-cyan-400 mt-4 text-center">{note}</p>
+                    {/* Note */}
+                    <p className="text-sm text-cyan-400 mt-3 text-center">
+                        {note}
+                    </p>
+                </div>
             </div>
         </div>
     );

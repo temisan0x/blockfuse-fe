@@ -4,7 +4,7 @@ import BootcampCard from "./BootcampCard";
 export default function Bootcamps() {
   return (
     <section className="py-16 text-white">
-      <div className=" mx-auto">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
           Our Bootcamps
         </h2>
