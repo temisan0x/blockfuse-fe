@@ -23,20 +23,19 @@ export default function OurJourney() {
   return (
     <section className="py-16 text-white">
       <div className="mx-auto">
-        {/* Section Heading */}
+
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
           Our Journey
         </h2>
 
-        {/* Journey Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {journeyItems.map((item, index) => (
             <div
               key={index}
-              className="p-6 bg-gray-900 rounded-lg shadow-md border border-purple-500 flex flex-col items-center text-center"
+              className="p-6 bg-gray-900 rounded-lg shadow-md border border-purple-500 flex flex-col items-center text-start"
             >
-              {/* Title with Purple Bullet */}
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
+
+              <h3 className="text-xl font-semibold mb-4 flex items-center w-full">
                 <span className="w-4 h-4 bg-purple-500 rounded-full mr-2"></span>
                 {item.title}
               </h3>
