@@ -18,11 +18,11 @@ export default function BootcampCard({ title, description, imageUrl, note, href 
                     {description}
                 </p>
 
-                {/* Button and Note Section */}
+
                 <div className="mt-auto py-6">
                     <Link
                         href={href || "#"}
-                        className="block items-center bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-all duration-300 ease-in-out hover:shadow-lg mx-auto block w-full max-w-xs text-center"
+                        className="block items-center bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-all duration-300 ease-in-out hover:shadow-lg mx-auto w-full max-w-xs text-center"
                     >
                         Join the Waitlist <span className="ml-2">→</span>
                     </Link>

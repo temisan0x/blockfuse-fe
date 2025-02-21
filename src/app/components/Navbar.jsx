@@ -22,7 +22,6 @@ const Nav = () => {
           </a>
         </div>
 
-        {/* Hamburger Menu Button - Visible on Mobile */}
         <button
           className="lg:hidden text-[#d1d5db] focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
