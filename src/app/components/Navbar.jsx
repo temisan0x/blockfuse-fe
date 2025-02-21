@@ -8,8 +8,8 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="text-white p-4">
-      <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 max-w-7xl bg-[#2F2E34]">
+    <nav className="text-white w-full">
+      <div className=" mx-auto max-w-7xl flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 bg-[#2F2E34]">
 
         <div className="text-xl font-bold">
           <a href="/" className="">
