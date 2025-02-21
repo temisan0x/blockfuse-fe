@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.font-helper {
+  position: relative;
+  /* top: 3px; */
+}
+
