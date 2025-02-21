@@ -1,32 +1,36 @@
 import Link from "next/link";
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <div className="h-screen bg-cover bg-center flex items-center px-10 sm:px-20 bg-[url('/img/profileImg.jpg')]">
-     <main className="w-full  mt-96 mx-auto flex flex-col sm:flex-row sm:items-end justify-between">
-        <div className="flex flex-col">
-          <div className="flex items-end font-helper">
-            <h1 className="hero-title sm:text-[280px] font-black text-white leading-none">
-              Fund
-            </h1>
-            <div className="flex flex-col ml-3 mb-3 sm:ml-5">
-              <h2 className="text-white text-[50px]  font-bold">
-                Help
-              </h2>
-              <h2 className="text-white text-[50px] font-bold">
-                Others
-              </h2>
-            </div>
-          </div>
-        </div>
+    <div className="relative min-h-screen flex flex-col justify-center items-start px-6 sm:px-10 lg:px-20 text-white overflow-hidden">
+      {/* Background Image */}
+      <img
+        src="https://www.blockfuselabs.com/assets/zigzag-q2OLhjMn.svg"
+        alt="Blockfuse Background"
+        className="absolute inset-0 object-cover opacity-10 z-0 m-auto"
+      />
 
-        <Link href="/fund">
-          <button className="bg-[#CCED85] hover:bg-[#cced85c7] text-slate-950 font-bold py-5 px-8 rounded-3xl text-lg sm:text-xl">
-            Start Fundraising
-          </button>
+      <div className="relative z-10 max-w-4xl mx-auto text-center w-full">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          Unlock the Future with Blockchain
+        </h1>
+
+        {/* Subheading */}
+        <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
+          Transform your skills and career with comprehensive training designed to lead the digital revolution.
+        </h3>
+
+        {/* Call-to-Action Button */}
+        <Link
+          href="/apply"
+          className="inline-flex items-center bg-[#A855F7] text-white px-6 py-3 rounded-lg text-base sm:text-lg font-medium hover:bg-[#7E22CE] transition-all duration-300 ease-in-out hover:shadow-lg"
+        >
+          Explore Our Bootcamps
+          <FaArrowRight className="ml-3" />
         </Link>
-      </main>
+      </div>
     </div>
   );
 }
