@@ -1,8 +1,10 @@
 import Bootcamps from "./components/Bootcamps";
 import CallToAction from "./components/CallToAction";
+import FAQ from "./components/FAQ";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import MoreThanBasics from "./components/MoreThanBasic";
+import Newsletter from "./components/Newsletter";
 import OurJourney from "./components/OurJourney";
 import Partners from "./components/Partners";
 import Testimonials from "./components/Testimonial";
@@ -23,6 +25,10 @@ export default function Home() {
         <Testimonials />
         <Partners />
         <CallToAction/>
+        <FAQ />
+      </div>
+      <div className="w-full bg-[#201F24]">
+        <Newsletter/>
       </div>
     </>
   );

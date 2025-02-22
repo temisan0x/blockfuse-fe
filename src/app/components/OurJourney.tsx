@@ -21,9 +21,9 @@ export default function OurJourney() {
   ];
 
   return (
-    <section className="py-16 text-white max-w-7xl mx-auto">
+    <section className="pt-16 sm:pt-14 md:pt-14 text-white max-w-7xl mx-auto">
       <div className="mx-auto">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-16 mt-40 sm:mt-32 md:mt-40 text-center text-white">
+        <h2 className="text-3xl sm:text-4xl font-bold my-14 sm:my-10 md:my-14 text-center text-white">
           Our Journey
         </h2>
 
@@ -33,7 +33,6 @@ export default function OurJourney() {
               key={index}
               className="p-6 bg-gray-900 rounded-lg shadow-md border border-purple-500 flex flex-col items-center text-start"
             >
-
               <h3 className="text-xl font-semibold mb-4 flex items-center w-full">
                 <span className="w-4 h-4 bg-purple-500 rounded-full mr-2"></span>
                 {item.title}
@@ -46,7 +45,7 @@ export default function OurJourney() {
         </div>
 
         <div className="text-center">
-            <p className="py-4">Start Your Journey Today</p>
+          <p className="py-4">Start Your Journey Today</p>
           <Link
             href="/join"
             className="inline-flex items-center bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-purple-700 transition-all duration-300 ease-in-out hover:shadow-lg"

@@ -10,33 +10,6 @@ export default function Partners() {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Auto-play functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % partners.length);
-    }, 3000); // 3-second delay for autoplay, matching your design
-
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [partners.length]);
-
-  // Handle navigation
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? partners.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % partners.length);
-  };
-
-  // Handle pagination click
-  const handleDotClick = (index) => {
-    setCurrentIndex(index);
-  };
-
   return (
     <section className="py-16 px-6 sm:px-10 lg:px-20 text-white">
       <div className="max-w-5xl mx-auto">
@@ -44,15 +17,9 @@ export default function Partners() {
           Our Partners
         </h2>
 
-        {/* Partner Carousel */}
         <div className="relative">
           <div
             className="flex items-center justify-center overflow-hidden"
-            style={{
-              transform: `translateX(-${currentIndex * 100}%)`,
-              transition: "transform 0.5s ease-in-out",
-              width: `${partners.length * 100}%`,
-            }}
           >
             {partners.map((partner, index) => (
               <div
@@ -71,23 +38,18 @@ export default function Partners() {
             ))}
           </div>
 
-          {/* Custom Pagination Bullets (Outside the Card, Alongside Navigation) */}
           <div className="absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 flex justify-center space-x-2 z-10">
             {partners.map((_, index) => (
               <span
                 key={index}
-                className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300 ${
-                  index === currentIndex ? "bg-purple-500" : "bg-gray-500"
-                }`}
-                onClick={() => handleDotClick(index)}
+                className={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-300  bg-purple-500`}
               ></span>
             ))}
           </div>
 
-          {/* Custom Navigation Buttons (Outside the Card) */}
           <button
             className="absolute top-1/2 -left-12 transform -translate-y-1/2 bg-purple-600 text-white p-2 rounded-full hover:bg-purple-700 transition-colors duration-300 z-20"
-            onClick={handlePrev}
+   
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +68,7 @@ export default function Partners() {
           </button>
           <button
             className="absolute top-1/2 -right-12 transform -translate-y-1/2 bg-purple-600 text-white p-2 rounded-full hover:bg-purple-700 transition-colors duration-300 z-20"
-            onClick={handleNext}
+     
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
