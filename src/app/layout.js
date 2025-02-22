@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.className} antialiased min-h-screen `}>
-        <main className="mx-auto w-full max-w-7xl px-4 py-10 flex flex-col items-center">
+        <main className="mx-auto w-full px-4 py-10 flex flex-col items-center">
           <Nav />
           {children}
         </main>
