@@ -23,8 +23,7 @@ export default function OurJourney() {
   return (
     <section className="py-16 text-white max-w-7xl mx-auto">
       <div className="mx-auto">
-
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-16 mt-40 sm:mt-32 md:mt-40 text-center text-white">
           Our Journey
         </h2>
 

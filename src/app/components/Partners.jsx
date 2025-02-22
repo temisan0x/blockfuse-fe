@@ -40,7 +40,7 @@ export default function Partners() {
   return (
     <section className="py-16 px-6 sm:px-10 lg:px-20 text-white">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-16 mt-40 sm:mt-32 md:mt-40 text-center text-white">
           Our Partners
         </h2>
 
@@ -62,7 +62,7 @@ export default function Partners() {
                 <img
                   src={partner.imageUrl}
                   alt={`${partner.name} logo`}
-                  className="w-32 h-auto object-contain" // Adjusted size to match screenshot
+                  className="w-32 h-auto object-contain"
                 />
                 <p className="text-xl font-semibold text-center mt-4 text-white">
                   {partner.name}

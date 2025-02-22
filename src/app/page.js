@@ -1,4 +1,5 @@
 import Bootcamps from "./components/Bootcamps";
+import CallToAction from "./components/CallToAction";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import MoreThanBasics from "./components/MoreThanBasic";
@@ -21,6 +22,7 @@ export default function Home() {
       <div className="w-full bg-[#131215]">
         <Testimonials />
         <Partners />
+        <CallToAction/>
       </div>
     </>
   );
