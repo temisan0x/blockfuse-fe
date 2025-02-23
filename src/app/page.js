@@ -26,17 +26,17 @@ export default function Home() {
       <div className="w-full bg-[#131215]">
         <Testimonials />
         <Partners />
-        <CallToAction/>
+        <CallToAction />
         <FAQ />
       </div>
       <div className="w-full bg-[#201F24]">
-        <Newsletter/>
+        <Newsletter />
       </div>
       <div>
-        <Community/>
+        <Community />
       </div>
       <div className="w-full">
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
