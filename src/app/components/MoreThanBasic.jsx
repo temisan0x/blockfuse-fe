@@ -57,7 +57,7 @@ export default function MoreThanBasics() {
                   <img
                     src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.99988%2016.7705L13.2699%2012.5005H20.9219V11.5005H13.2679L8.99988%207.23047L4.22987%2012.0005L8.99988%2016.7705Z'%20fill='white'/%3e%3c/svg%3e"
                     alt="Diamond"
-                    className="w-5 h-5 ml-4" // Added margin for spacing
+                    className="w-5 h-5 ml-4" 
                   />
                 </div>
               </div>

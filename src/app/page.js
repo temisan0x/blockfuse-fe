@@ -1,7 +1,9 @@
 import Bootcamps from "./components/Bootcamps";
 import CallToAction from "./components/CallToAction";
+import Community from "./components/Community";
 import FAQ from "./components/FAQ";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import MoreThanBasics from "./components/MoreThanBasic";
 import Newsletter from "./components/Newsletter";
@@ -29,6 +31,12 @@ export default function Home() {
       </div>
       <div className="w-full bg-[#201F24]">
         <Newsletter/>
+      </div>
+      <div>
+        <Community/>
+      </div>
+      <div className="w-full">
+        <Footer/>
       </div>
     </>
   );

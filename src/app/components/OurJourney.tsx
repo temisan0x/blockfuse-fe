@@ -21,7 +21,7 @@ export default function OurJourney() {
   ];
 
   return (
-    <section className="pt-16 sm:pt-14 md:pt-14 text-white max-w-7xl mx-auto">
+    <section className="py-16 sm:py-14 md:py-14 text-white max-w-7xl mx-auto">
       <div className="mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold my-14 sm:my-10 md:my-14 text-center text-white">
           Our Journey

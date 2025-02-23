@@ -40,13 +40,13 @@ export default function FAQ() {
     return (
         <section className="py-16 px-6 sm:px-10 lg:px-20  text-white">
             <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-16 mt-40 sm:mt-32 md:mt-40 text-center text-white">
-                    FAQ’s
+                <h2 className="text-3xl sm:text-4xl font-bold mb-16 mt-40 sm:mt-32 md:mt-40 text-center text-white">
+                    FAQ's
                 </h2>
                 <p className="text-base sm:text-lg text-gray-300 mb-12 text-center max-w-2xl mx-auto leading-relaxed">
-                    Everything you need to know about Blockfuse Labs! Can’t find the answer you’re looking for? Please chat with our friendly team, or reach out to us on our Telegram channel{" "}
+                    Everything you need to know about Blockfuse Labs! Can't find the answer you're looking for? Please chat with our friendly team, or reach out to us on our Telegram channel
                     <Link
-                        href="https://t.me/BlockfuseLabs" // Replace with the actual Telegram URL
+                        href="https://t.me/BlockfuseLabs"
                         className="text-purple-500 hover:text-purple-400 underline"
                     >
                         here
