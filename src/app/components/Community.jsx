@@ -47,7 +47,7 @@ export default function Community() {
   return (
     <section className="py-16 sm:py-14 md:py-14  text-white max-w-7xl mx-auto">
       <div className="mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 mt-40 text-center text-white">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 mt-5 text-center text-white">
           Join our Community
         </h2>
         <p className="text-base sm:text-lg text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed text-center">

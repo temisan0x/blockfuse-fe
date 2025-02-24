@@ -14,19 +14,19 @@ export default function Testimonials() {
     },
     {
       id: "22/12/2024",
-      name: "Jane Doe",
+      name: "Marcus David Gyang",
       feedback:
-        "Blockfuse Labs provided me with the skills and confidence to transition into a web development career. The hands-on projects and supportive community were invaluable.",
+        "My experience at Blockfuse labs has been a life changing experience, nothing short of Amazing. From the quality of knowledge being taught, to participating in real life projects and having the opportunity to learn from the best mentors and other brilliant minds in the community,Blockfuse Labs has really impacted my life and career as a developer (for",
       imageUrl:
-        "https://res.cloudinary.com/dcl3ecscw/image/upload/v1732201896/testimony/y8e3ygxaccdbenvxzg4w.jpg",
+        "https://res.cloudinary.com/dcl3ecscw/image/upload/v1732201958/testimony/iahtrtej4xhiyelecwyv.jpg",
     },
     {
       id: "23/12/2024",
-      name: "John Smith",
+      name: "Luckify",
       feedback:
-        "The collaborative environment at Blockfuse Labs helped me grow both technically and professionally. I highly recommend it to anyone looking to upskill.",
+        "BlockfuseLabs is the best",
       imageUrl:
-        "https://res.cloudinary.com/dcl3ecscw/image/upload/v1732201896/testimony/y8e3ygxaccdbenvxzg4w.jpg",
+        "https://res.cloudinary.com/dcl3ecscw/image/upload/v1731314243/testimony/o2lsuc71lbotpudzjabs.jpg",
     },
   ];
 
@@ -85,7 +85,7 @@ export default function Testimonials() {
                   <img
                     src={testimonial.imageUrl}
                     alt={`${testimonial.name}'s profile`}
-                    className="w-52 h-auto object-cover l flex-shrink-0"
+                    className="w-52 h-52 object-cover l flex-shrink-0"
                   />
 
                   <div className="flex-1 p-6">
@@ -95,9 +95,10 @@ export default function Testimonials() {
                     <h3 className="text-xl font-semibold mb-2">
                       {testimonial.name}
                     </h3>
-                    <p className="text-base text-gray-300 leading-relaxed">
+                    <p className="text-base text-gray-300 w-full max-w-md line-clamp-2">
                       {testimonial.feedback}
                     </p>
+
                   </div>
                 </div>
               ))}

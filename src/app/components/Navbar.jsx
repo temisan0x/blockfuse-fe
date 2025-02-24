@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { FiMenu, FiX } from "react-icons/fi"; // Import menu icons
+import { FiMenu, FiX } from "react-icons/fi"; 
 import Link from "next/link";
 
 const Nav = () => {
@@ -31,9 +31,8 @@ const Nav = () => {
         </button>
 
         <ul
-          className={`lg:flex lg:space-x-6 text-sm text-[#d1d5db] lg:static absolute top-16 left-0 w-full bg-[#2F2E34] lg:w-auto lg:bg-transparent lg:flex-row lg:items-center transition-all duration-300 ease-in-out ${
-            isOpen ? "flex flex-col items-center py-4" : "hidden"
-          }`}
+          className={`lg:flex lg:space-x-6 text-sm text-[#d1d5db] lg:static absolute top-16 left-0 w-full bg-[#2F2E34] lg:w-auto lg:bg-transparent lg:flex-row lg:items-center transition-all duration-300 ease-in-out ${isOpen ? "flex flex-col items-center py-4" : "hidden"
+            }`}
         >
           <li><Link href="/" className="hover:text-purple-500 py-2 lg:py-0">Home</Link></li>
           <li><Link href="/about" className="hover:text-purple-500 py-2 lg:py-0">About us</Link></li>

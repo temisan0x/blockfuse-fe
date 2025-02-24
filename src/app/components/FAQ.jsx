@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link"; // For the Telegram link
+import Link from "next/link"; 
 
 export default function FAQ() {
   const faqs = [
