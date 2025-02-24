@@ -25,7 +25,7 @@ export default function MoreThanBasics() {
   ];
 
   return (
-    <section className="py-16 text-white">
+    <section className="py-16 text-white mb-10">
       <div className="mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
           More Than Just the Basics
